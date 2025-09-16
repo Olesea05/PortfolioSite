@@ -1,0 +1,372 @@
+
+ * {
+    font-family: 'Roboto', sans-serif;
+ }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f6f7f9
+}
+
+header {
+    height: 100px;
+    padding: 0 40px;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header span {
+margin-right: 20px; /* увеличивает расстояние между номером и кнопкой */
+}
+
+
+.fixed-container {
+    max-width: 1000px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.level-badge {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid black; /* цвет рамки */
+    border-radius: 4px;
+    font-weight: 500;
+    color: black;
+    background-color: transparent;
+}
+
+section {
+    padding: 40px;
+}
+
+.first-block {
+    height: 400px;
+}
+
+.first-block > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url('/static/portfolio/img/my_photo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.first-block h1 {
+    margin: 0 0 20px 0;
+    font-size: 48px;
+}
+
+.first-block p {
+    margin: 0 0 40px 0;
+}
+
+.first-block button {
+    margin: 0;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 0;
+    text-align: left;
+}
+
+.skills-left, {
+    display: flex;
+    flex-direction: column;  /* элементы идут сверху вниз */
+    justify-content: flex-start; /* выравниваем по верхнему краю */
+}
+
+.skills-left ul {
+    margin-top: 0;           /* убираем лишний отступ сверху */
+    padding-left: 20px;      /* оставляем стандартный отступ для списка */
+}
+
+.skills-left h2 {
+    margin-top: 0;         /* убираем лишние отступы сверху */
+    margin-bottom: 20px;   /* добавляем отступ снизу, если нужно */
+    position: relative;
+    top: -10px;            /* поднимаем заголовок чуть выше */
+}
+
+.skills-right.about-me {
+  background-color: #3d52fe;
+  color: white;
+  padding: 40px;             /* чуть больше внутреннего отступа */
+  border-radius: 5px;
+  width: 70%;
+}
+
+.skills-right.about-me p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+
+.about-buttons {
+    display: flex;
+    justify-content: flex-end; /* сдвигаем все кнопки вправо внутри контейнера */
+    gap: 10px; /* расстояние между кнопками */
+    margin-top: 15px; /* отступ от текста */
+}
+
+.about-buttons button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #f6f7f9;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+.about-buttons button:hover {
+  background-color: #e0e0e0; /* эффект при наведении */
+}
+
+.popup-container {
+    display: none; /* скрыт по умолчанию */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* полупрозрачный фон */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup {
+    background-color: #fff;
+    padding: 40px;          /* увеличиваем внутренние отступы */
+    border-radius: 15px;
+    width: 95%;             /* шире, чем было */
+    max-width: 1400px;      /* максимальная ширина */
+    max-height: 95%;        /* не на весь экран */
+    min-height: 500px;
+    min-width: 700px;
+    overflow-y: auto;       /* прокрутка, если много контента */
+    box-shadow: 0 0 25px rgba(0,0,0,0.3); /* чуть более заметная тень */
+}
+
+.popup-item {
+    margin-bottom: 65px;
+}
+
+.course-title {
+    font-size: 22px;                 /* чуть больше шрифт */
+    font-weight: bold;                /* жирный */
+    color: #000;                      /* чёрный текст */
+    background-color: #FFB6C1;        /* нежно-розовый фон (как маркер) */
+    display: inline;                  /* чтобы фон был только за текстом */
+    padding: 2px 4px;                 /* немного отступов вокруг текста */
+    border-radius: 3px;               /* скругление, чтобы выглядело аккуратно */
+    margin-bottom: 10px;
+}
+
+#contests .course-title {
+    margin-bottom: 30px;   /* создаём отступ вниз */
+    display: inline-block; /* заголовок остаётся компактным */
+}
+
+.course-label {
+    font-weight: bold;
+}
+
+.popup-item p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.services > div {
+    width: 200px;
+}
+
+.services img {
+    width: 150px;
+}
+
+.services > div img {
+    margin-bottom: 30px; /* увеличиваем отступ подписи от иконки */
+}
+
+.services + .light-button {
+    margin-top: 40px; /* увеличиваем отступ кнопки от блока с иконками */
+}
+
+.light-button {
+    border: 1px solid black;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.dark-button {
+    background-color: #3d52fe;
+    border: 1px solid #3d52fe;
+    color: white;
+}
+
+button {
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.works {
+    display: flex;                /* размещаем элементы в ряд */
+    justify-content: space-between; /* равномерное распределение */
+    margin-top: 50px;             /* отступ сверху от заголовка */
+}
+
+.work-item a {
+    display: block;
+    color: black;           /* делаем текст черным */
+    text-decoration: none;   /* убираем подчеркивание */
+}
+
+.work-item a:hover {
+    color: black;           /* при наведении тоже черным */
+    text-decoration: none;  /* при наведении не подчеркивать */
+}
+
+.work-item {
+    width: 30%;                   /* ширина каждого элемента */
+}
+
+.work-item img {
+    width: 100%;                  /* изображение занимает весь блок */
+    border-radius: 5px;           /* скругление углов, если нужно */
+}
+
+
+.fixed-container h2 {
+    margin-bottom: 30px; /* поднимаем заголовок над фотографиями */
+}
+
+
+.footer {
+    margin-top: 65px;   /* отодвигает футер от блока выше */
+    margin-bottom: 37px; /* снизу */
+}
+
+.footer-container.one-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+/* порядок элементов === */
+.footer-socials {
+    order: 1; /* слева */
+}
+
+.footer-year {
+    order: 2; /* в центре */
+}
+
+.footer-contacts {
+    order: 3; /* справа */
+}
+
+.footer-contacts p#email {
+    cursor: pointer;
+    text-decoration: none;  /* убираем стандартное подчёркивание */
+    transition: all 0.3s;
+}
+
+.footer-contacts p#email:hover {
+    text-decoration: underline;
+}
+
+.footer-socials {
+    display: flex;      /* все картинки в ряд */
+    align-items: center;
+    gap: 15px;          /* расстояние между иконками */
+}
+
+.icon-inst {
+    display: block;     /* убирает нижний зазор */
+    width: 22px;
+    height: auto;
+}
+
+.icon-tg {
+    display: block;
+    width: 25px;
+    height: auto;
+}
+
+.icon-viber {
+    display: block;
+    width: 24px;
+    height: auto;
+}
+
+
+.popup-container {
+    background-color: #000000b3;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+/* Общий стиль для всех email с классом copy-email */
+.copy-email {
+    cursor: pointer;          /* меняем курсор на «руку» */
+    text-decoration: none;    /* убираем стандартное подчёркивание */
+    transition: text-decoration 0.2s;
+}
+
+/* Подчёркивание при наведении */
+.copy-email:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        {% load static %}
+        <meta charset="UTF-8">
+        <title>CVSite</title>
+        <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="fixed-container">
+                <div>
+                    <a href="https://www.instagram.com/olesya_gh/" target="_blank">Instagram</a>
+                    <a href="https://t.me/olesya_gh" target="_blank">Telegram</a>
+                </div>
+                <div>
+                    <span>+373 676 177 04</span>
+                    <span id="email" class="copy-email">ghincuolesea@gmail.com</span>
+                </div>
+            </div>
+        </header>
+        <section class="first-block">
+            <div class="fixed-container">
+                <h1>Олеся Гынку</h1>
+                <p>Python Backend Developer</p>
+                <span class="level-badge">Junior</span>
+            </div>
+        </section>
+        <section class="skills-section">
+          <div class="fixed-container skills-container">
+
+            <!-- Левая колонка: навыки -->
+            <div class="skills-left">
+              <h2>Навыки</h2>
+              <ul>
+                <li>Python</li>
+                <li>Django</li>
+                <li>SQLite</li>
+                <li>Pycharm, VsCode</li>
+                <li>Git</li>
+                <li>Linux</li>
+                <li>Основы Flask</li>
+                <li>Основы HTML/CSS</li>
+              </ul>
+            </div>
+
+            <!-- Правая колонка: о себе -->
+            <div class="skills-right about-me">
+              <p>Добрый день! Меня зовут Олеся, мне 20 лет, и я изучаю Python,
+                  начиная с 2022 года. Я живу в Молдове и владею русским, румынским, английским (B2+)
+                  и болгарским языком. Стремлюсь продолжать развиваться как Python-разработчик!</p>
+              <div class="about-buttons">
+                <button class="light-button open-popup" data-popup="courses">Оконченные курсы</button>
+                <button class="light-button open-popup" data-popup="contests">Конкурсы</button>
+              </div>
+            </div>
+
+          </div>
+        </section>
+        <!-- Попап: Курсы -->
+        <div class="popup-container" id="courses">
+            <div class="popup">
+                <h2>Пройденные курсы:</h2>
+                <!-- Третий курс -->
+                <div class="popup-item">
+                    <p class="course-title">2024-2025 год - "Skillbox: Python Backend Developer"</p>
+                    <p><span class="course-label">Длительность обучения:</span> 1 год</p>
+                    <p><span class="course-label">Итоги курса:</span></p>
+                    <ul class="course-results">
+                        <li>Ознакомилась с профессией Python-разработчика и базовыми инструментами.</li>
+                        <li>Реализовала учебный проект: Telegram-бот «Quote of the Day» (Python).</li>
+                        <li>Начала разработку проекта интернет-магазина на Django.</li>
+                    </ul>
+                </div>
+                <!-- Второй курс -->
+                <div class="popup-item">
+                    <p class="course-title">Лето 2022 года - "Летняя школа Python-Junior"</p>
+                    <p><span class="course-label">Длительность обучения:</span> 2 месяца</p>
+                    <p><span class="course-label">Итоги курса:</span></p>
+                    <ul class="course-results">
+                        <li>Изучила основы Django</li>
+                        <li>Учавствовала в реализации и презентации командного проекта "Сайт для агрономов города"</li>
+                    </ul>
+                </div>
+                <!-- Первый курс -->
+                <div class="popup-item">
+                    <p class="course-title">Весна 2022 года - "Python для начинающих"</p>
+                    <p><span class="course-label">Длительность обучения:</span> 3 месяца</p>
+                    <p><span class="course-label">Итоги курса:</span></p>
+                    <ul class="course-results">
+                        <li>Изучила основы Python</li>
+                        <li>Реализовала и презентовала учебный проект «Контроль бюджета» на Python с использованием работы с файлами в VS Code</li>
+                    </ul>
+                </div>
+                <button class="close-popup">Закрыть</button>
+            </div>
+        </div>
+
+        <!-- Попап: Конкурсы -->
+        <div class="popup-container" id="contests">
+            <div class="popup">
+                <h2>Участие в конкурсах:</h2>
+                <!-- Третья оллимпиада -->
+                <div class="popup-item">
+                    <p class="course-title">Районные олимпиады по информатике:</p>
+                    <p><span class="course-label">2024 год:</span> I место (12 класс)</p>
+                    <p><span class="course-label">2023 год:</span> I место (11 класс)</p>
+                    <p><span class="course-label">2022 год:</span> I место (10 класс)</p>
+                </div>
+                <button class="close-popup">Закрыть</button>
+            </div>
+        </div>
+
+        <section>
+            <div class="fixed-container">
+                <h2>Примеры работ</h2>
+                <div class="works">
+                    <div class="work-item">
+                        <a href="#">
+                            <img src="{% static 'portfolio/img/portfolio.jpg' %}" alt="portfolio">
+                            <p>Данный сайт создан мной самостоятельно</p>
+                        </a>
+                    </div>
+                    <div class="work-item bot-project">
+                        <a href="https://github.com/Olesea05/QuoteBotTelegram" target="_blank">
+                            <img src="{% static 'portfolio/img/bot.jpg' %}" alt="Telegram Bot">
+                            <p>Телеграм-бот "Quote of the day", высылающий цитаты</p>
+                        </a>
+                    </div>
+                    <div class="work-item bot-project">
+                        <a href="https://github.com/Olesea05/OnlineStoreLaserSmart" target="_blank">
+                            <img src="{% static 'portfolio/img/shop.jpg' %}" alt="Telegram Bot">
+                            <p>Интернет магазин, находящийся в разработке</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="fixed-container footer-container one-line">
+                <div class="footer-contacts">
+                    <p id="email-footer" class="copy-email">ghincuolesea@gmail.com</p>
+                </div>
+                <div class="footer-year">
+                    <p>© <span id="year"></span> Olesea Ghincu</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/olesya_gh/" target="_blank">
+                        <img src="{% static 'portfolio/img/inst.png' %}" alt="Instagram" class="icon-inst">
+                    </a>
+                    <a href="https://t.me/olesya_gh" target="_blank">
+                        <img src="{% static 'portfolio/img/telegram.png' %}" alt="Telegram" class="icon-tg">
+                    </a>
+                    <a href="viber://chat?number=%2B37367617704" target="_blank">
+                        <img src="{% static 'portfolio/img/viber.png' %}" alt="Viber" class="icon-viber">
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <script src="{% static 'portfolio/scripts/scripts.js' %}"></script>
+    </body>
+</html>
