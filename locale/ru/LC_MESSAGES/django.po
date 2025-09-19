@@ -1,0 +1,182 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-19 12:05+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\portfolio\templates\portfolio\home.html:47
+msgid "Olesea Ghincu"
+msgstr "Олеся Гынку"
+
+#: .\portfolio\templates\portfolio\home.html:57
+msgid "Skills"
+msgstr "Навыки"
+
+#: .\portfolio\templates\portfolio\home.html:65
+msgid "Basics of Flask"
+msgstr "Основы Flask"
+
+#: .\portfolio\templates\portfolio\home.html:66
+msgid "Basics of HTML/CSS"
+msgstr "Основы HTML/CSS"
+
+#: .\portfolio\templates\portfolio\home.html:72
+msgid ""
+"Hello! My name is Olesea, I am 20 years old, and I have been learning Python "
+"since 2022. I live in Moldova and speak Russian, Romanian, English (B2+) and "
+"Bulgarian. I strive to continue developing as a Python developer!"
+msgstr ""
+"Добрый день! Меня зовут Олеся, мне 20 лет, и я изучаю Python начиная с 2022 "
+"года. Я живу в Молдове и владею русским, румынским, английским (B2+) и "
+"болгарским языком. Стремлюсь продолжать развиваться как Python-разработчик!"
+
+#: .\portfolio\templates\portfolio\home.html:74
+msgid "Completed Courses"
+msgstr "Оконченные курсы"
+
+#: .\portfolio\templates\portfolio\home.html:75
+msgid "Contests"
+msgstr "Конкурсы"
+
+#: .\portfolio\templates\portfolio\home.html:83
+msgid "Completed Courses:"
+msgstr "Пройденные курсы:"
+
+#: .\portfolio\templates\portfolio\home.html:87
+#: .\portfolio\templates\portfolio\home.html:98
+#: .\portfolio\templates\portfolio\home.html:108
+msgid "Course Duration:"
+msgstr "Длительность курса"
+
+#: .\portfolio\templates\portfolio\home.html:87
+msgid "1 year"
+msgstr "1 год"
+
+#: .\portfolio\templates\portfolio\home.html:88
+#: .\portfolio\templates\portfolio\home.html:99
+#: .\portfolio\templates\portfolio\home.html:109
+msgid "Course Outcomes:"
+msgstr "Итоги курса"
+
+#: .\portfolio\templates\portfolio\home.html:90
+msgid "Learned the profession of Python developer and basic tools."
+msgstr ""
+"Ознакомилась с профессией Python-разработчика и базовыми инструментами."
+
+#: .\portfolio\templates\portfolio\home.html:91
+msgid ""
+"Implemented a learning project: Telegram bot «Quote of the Day» (Python)."
+msgstr "Реализовала учебный проект: Telegram-бот «Quote of the Day» (Python)."
+
+#: .\portfolio\templates\portfolio\home.html:92
+msgid "Started development of an online store project on Django."
+msgstr "Начала разработку проекта интернет-магазина на Django."
+
+#: .\portfolio\templates\portfolio\home.html:97
+msgid "Summer 2022 - \"Python-Junior Summer School\""
+msgstr "Лето 2022 года - \"Летняя школа Python-Junior\""
+
+#: .\portfolio\templates\portfolio\home.html:98
+msgid "2 months"
+msgstr "2 месяца"
+
+#: .\portfolio\templates\portfolio\home.html:101
+msgid "Learned the basics of Django."
+msgstr "Изучила основы Django"
+
+#: .\portfolio\templates\portfolio\home.html:102
+msgid ""
+"Participated in the implementation and presentation of a team project "
+"\"Website for City Agronomists\"."
+msgstr ""
+"Учавствовала в реализации и презентации командного проекта \"Сайт для "
+"агрономов города\"."
+
+#: .\portfolio\templates\portfolio\home.html:107
+msgid "Spring 2022 - \"Python for Beginners\""
+msgstr "Весна 2022 года - \"Python для начинающих\""
+
+#: .\portfolio\templates\portfolio\home.html:108
+msgid "3 months"
+msgstr "3 месяца"
+
+#: .\portfolio\templates\portfolio\home.html:111
+msgid "Learned the basics of Python."
+msgstr "Изучила основы Python"
+
+#: .\portfolio\templates\portfolio\home.html:112
+msgid ""
+"Implemented and presented a learning project «Budget Control» in Python "
+"using file operations in VS Code."
+msgstr ""
+"Реализовала и презентовала учебный проект «Контроль бюджета» на Python с "
+"использованием работы с файлами в VS Code"
+
+#: .\portfolio\templates\portfolio\home.html:115
+#: .\portfolio\templates\portfolio\home.html:130
+msgid "Close"
+msgstr "Закрыть"
+
+#: .\portfolio\templates\portfolio\home.html:122
+msgid "Participation in Contests:"
+msgstr "Участие в конкурсах"
+
+#: .\portfolio\templates\portfolio\home.html:125
+msgid "District Informatics Olympiads:"
+msgstr "Районные олимпиады по информатике:"
+
+#: .\portfolio\templates\portfolio\home.html:126
+msgid "2024:"
+msgstr "2024:"
+
+#: .\portfolio\templates\portfolio\home.html:126
+msgid "1st place (12th grade)"
+msgstr " I место (12 класс)"
+
+#: .\portfolio\templates\portfolio\home.html:127
+msgid "2023:"
+msgstr "2023:"
+
+#: .\portfolio\templates\portfolio\home.html:127
+msgid "1st place (11th grade)"
+msgstr " I место (11 класс)"
+
+#: .\portfolio\templates\portfolio\home.html:128
+msgid "2022:"
+msgstr "2022:"
+
+#: .\portfolio\templates\portfolio\home.html:128
+msgid "1st place (10th grade)"
+msgstr " I место (10 класс)"
+
+#: .\portfolio\templates\portfolio\home.html:136
+msgid "Project Examples"
+msgstr "Примеры работ"
+
+#: .\portfolio\templates\portfolio\home.html:141
+msgid "This website was created by me independently."
+msgstr "Данный сайт разработан мной самостоятельно"
+
+#: .\portfolio\templates\portfolio\home.html:147
+msgid "Telegram bot \"Quote of the Day\", sending daily quotes"
+msgstr "Telegram bot \"Quote of the Day\", ежендевно высылающий цитаты"
+
+#: .\portfolio\templates\portfolio\home.html:153
+msgid "Online store, currently under development"
+msgstr "Интернет-магазин, находящийся в разработке"

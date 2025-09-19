@@ -1,0 +1,181 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-19 12:05+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1));\n"
+
+#: .\portfolio\templates\portfolio\home.html:47
+msgid "Olesea Ghincu"
+msgstr "Olesea Ghincu"
+
+#: .\portfolio\templates\portfolio\home.html:57
+msgid "Skills"
+msgstr "Competențe"
+
+#: .\portfolio\templates\portfolio\home.html:65
+msgid "Basics of Flask"
+msgstr "Bazele Flask"
+
+#: .\portfolio\templates\portfolio\home.html:66
+msgid "Basics of HTML/CSS"
+msgstr "Bazele HTML/CSS"
+
+#: .\portfolio\templates\portfolio\home.html:72
+msgid ""
+"Hello! My name is Olesea, I am 20 years old, and I have been learning Python "
+"since 2022. I live in Moldova and speak Russian, Romanian, English (B2+) and "
+"Bulgarian. I strive to continue developing as a Python developer!"
+msgstr ""
+"Buna ziua! Mă numesc Olesea, am 20 de ani și învăț Python din 2022. Locuiesc "
+"în Moldova și vorbesc rusă, română, engleză (B2+) și bulgară. Îmi doresc să "
+"continui să mă dezvolt ca programatoare Python!"
+
+#: .\portfolio\templates\portfolio\home.html:74
+msgid "Completed Courses"
+msgstr "Cursuri finalizate"
+
+#: .\portfolio\templates\portfolio\home.html:75
+msgid "Contests"
+msgstr "Concursuri"
+
+#: .\portfolio\templates\portfolio\home.html:83
+msgid "Completed Courses:"
+msgstr "Cursuri finalizate:"
+
+#: .\portfolio\templates\portfolio\home.html:87
+#: .\portfolio\templates\portfolio\home.html:98
+#: .\portfolio\templates\portfolio\home.html:108
+msgid "Course Duration:"
+msgstr "Durata cursului:"
+
+#: .\portfolio\templates\portfolio\home.html:87
+msgid "1 year"
+msgstr "1 an"
+
+#: .\portfolio\templates\portfolio\home.html:88
+#: .\portfolio\templates\portfolio\home.html:99
+#: .\portfolio\templates\portfolio\home.html:109
+msgid "Course Outcomes:"
+msgstr "Rezultatele cursului:"
+
+#: .\portfolio\templates\portfolio\home.html:90
+msgid "Learned the profession of Python developer and basic tools."
+msgstr "Am învățat profesia de programator Python și instrumentele de bază."
+
+#: .\portfolio\templates\portfolio\home.html:91
+msgid ""
+"Implemented a learning project: Telegram bot «Quote of the Day» (Python)."
+msgstr ""
+"Am realizat un proiect de învățare: Telegram bot «Quote of the Day» (Python)."
+
+#: .\portfolio\templates\portfolio\home.html:92
+msgid "Started development of an online store project on Django."
+msgstr "Am început dezvoltarea unui proiect de magazin online pe Django."
+
+#: .\portfolio\templates\portfolio\home.html:97
+msgid "Summer 2022 - \"Python-Junior Summer School\""
+msgstr "Vara 2022 - \"Școala de vară Python-Junior\""
+
+#: .\portfolio\templates\portfolio\home.html:98
+msgid "2 months"
+msgstr "2 luni"
+
+#: .\portfolio\templates\portfolio\home.html:101
+msgid "Learned the basics of Django."
+msgstr "Am învățat bazele Django."
+
+#: .\portfolio\templates\portfolio\home.html:102
+msgid ""
+"Participated in the implementation and presentation of a team project "
+"\"Website for City Agronomists\"."
+msgstr ""
+"Am participat la realizarea și prezentarea unui proiect de echipă \"Website "
+"pentru agronomi din oraș\"."
+
+#: .\portfolio\templates\portfolio\home.html:107
+msgid "Spring 2022 - \"Python for Beginners\""
+msgstr "Primăvara 2022 - \"Python pentru începători\""
+
+#: .\portfolio\templates\portfolio\home.html:108
+msgid "3 months"
+msgstr "3 luni"
+
+#: .\portfolio\templates\portfolio\home.html:111
+msgid "Learned the basics of Python."
+msgstr "Am învățat bazele Python."
+
+#: .\portfolio\templates\portfolio\home.html:112
+msgid ""
+"Implemented and presented a learning project «Budget Control» in Python "
+"using file operations in VS Code."
+msgstr ""
+"Am realizat și prezentat un proiect de învățare «Controlul bugetului» în "
+"Python folosind operațiuni cu fișiere în VS Code."
+
+#: .\portfolio\templates\portfolio\home.html:115
+#: .\portfolio\templates\portfolio\home.html:130
+msgid "Close"
+msgstr "Închide"
+
+#: .\portfolio\templates\portfolio\home.html:122
+msgid "Participation in Contests:"
+msgstr "Participare la concursuri:"
+
+#: .\portfolio\templates\portfolio\home.html:125
+msgid "District Informatics Olympiads:"
+msgstr "Olimpiade de informatică raionale:"
+
+#: .\portfolio\templates\portfolio\home.html:126
+msgid "2024:"
+msgstr "2024:"
+
+#: .\portfolio\templates\portfolio\home.html:126
+msgid "1st place (12th grade)"
+msgstr "Locul 1 (clasa a XII-a)"
+
+#: .\portfolio\templates\portfolio\home.html:127
+msgid "2023:"
+msgstr "2023:"
+
+#: .\portfolio\templates\portfolio\home.html:127
+msgid "1st place (11th grade)"
+msgstr "Locul 1 (clasa a XI-a)"
+
+#: .\portfolio\templates\portfolio\home.html:128
+msgid "2022:"
+msgstr "2022:"
+
+#: .\portfolio\templates\portfolio\home.html:128
+msgid "1st place (10th grade)"
+msgstr "Locul 1 (clasa a X-a)"
+
+#: .\portfolio\templates\portfolio\home.html:136
+msgid "Project Examples"
+msgstr "Exemple de proiecte"
+
+#: .\portfolio\templates\portfolio\home.html:141
+msgid "This website was created by me independently."
+msgstr "Acest site a fost creat de mine în mod independent."
+
+#: .\portfolio\templates\portfolio\home.html:147
+msgid "Telegram bot \"Quote of the Day\", sending daily quotes"
+msgstr "Telegram bot «Quote of the Day», trimite citate zilnic"
+
+#: .\portfolio\templates\portfolio\home.html:153
+msgid "Online store, currently under development"
+msgstr "Magazin online, în prezent în dezvoltare"

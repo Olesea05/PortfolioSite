@@ -12,7 +12,27 @@
     <body>
         <header>
             <div class="fixed-container">
-                <div>
+                <!-- Выбор языка -->
+                {% load i18n %}
+                <div class="language-dropdown">
+                    {% get_current_language as LANGUAGE_CODE %}
+                    <button class="dropbtn">
+                        {% if LANGUAGE_CODE == 'en' %}English
+                        {% elif LANGUAGE_CODE == 'ru' %}Русский
+                        {% elif LANGUAGE_CODE == 'ro' %}Română
+                        {% else %}Language{% endif %} ▼
+                    </button>
+                    <div class="dropdown-content">
+                        <form action="{% url 'set_language' %}" method="post">
+                            {% csrf_token %}
+                            <input name="next" type="hidden" value="/">
+                            <button type="submit" name="language" value="en">English</button>
+                            <button type="submit" name="language" value="ru">Русский</button>
+                            <button type="submit" name="language" value="ro">Română</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="social-links">
                     <a href="https://www.instagram.com/olesya_gh/" target="_blank">Instagram</a>
                     <a href="https://t.me/olesya_gh" target="_blank">Telegram</a>
                 </div>
@@ -24,7 +44,7 @@
         </header>
         <section class="first-block">
             <div class="fixed-container">
-                <h1>Олеся Гынку</h1>
+                <h1>{% trans "Olesea Ghincu" %}</h1>
                 <p>Python Backend Developer</p>
                 <span class="level-badge">Junior</span>
             </div>
@@ -34,7 +54,7 @@
 
             <!-- Левая колонка: навыки -->
             <div class="skills-left">
-              <h2>Навыки</h2>
+              <h2>{% trans "Skills" %}</h2>
               <ul>
                 <li>Python</li>
                 <li>Django</li>
@@ -42,98 +62,95 @@
                 <li>Pycharm, VsCode</li>
                 <li>Git</li>
                 <li>Linux</li>
-                <li>Основы Flask</li>
-                <li>Основы HTML/CSS</li>
+                <li>{% trans "Basics of Flask" %}</li>
+                <li>{% trans "Basics of HTML/CSS" %}</li>
               </ul>
             </div>
 
             <!-- Правая колонка: о себе -->
-            <div class="skills-right about-me">
-              <p>Добрый день! Меня зовут Олеся, мне 20 лет, и я изучаю Python,
-                  начиная с 2022 года. Я живу в Молдове и владею русским, румынским, английским (B2+)
-                  и болгарским языком. Стремлюсь продолжать развиваться как Python-разработчик!</p>
-              <div class="about-buttons">
-                <button class="light-button open-popup" data-popup="courses">Оконченные курсы</button>
-                <button class="light-button open-popup" data-popup="contests">Конкурсы</button>
-              </div>
+                <div class="skills-right about-me">
+                  <p>{% trans "Hello! My name is Olesea, I am 20 years old, and I have been learning Python since 2022. I live in Moldova and speak Russian, Romanian, English (B2+) and Bulgarian. I strive to continue developing as a Python developer!" %}</p>
+                  <div class="about-buttons">
+                    <button class="light-button open-popup" data-popup="courses">{% trans "Completed Courses" %}</button>
+                    <button class="light-button open-popup" data-popup="contests">{% trans "Contests" %}</button>
+                  </div>
+                </div>
             </div>
-
-          </div>
         </section>
         <!-- Попап: Курсы -->
         <div class="popup-container" id="courses">
             <div class="popup">
-                <h2>Пройденные курсы:</h2>
+                <h2>{% trans "Completed Courses:" %}</h2>
                 <!-- Третий курс -->
                 <div class="popup-item">
-                    <p class="course-title">2024-2025 год - "Skillbox: Python Backend Developer"</p>
-                    <p><span class="course-label">Длительность обучения:</span> 1 год</p>
-                    <p><span class="course-label">Итоги курса:</span></p>
+                    <p class="course-title">2024-2025 - "Skillbox: Python Backend Developer"</p>
+                    <p><span class="course-label">{% trans "Course Duration:" %}</span> {% trans "1 year" %}</p>
+                    <p><span class="course-label">{% trans "Course Outcomes:" %}</span></p>
                     <ul class="course-results">
-                        <li>Ознакомилась с профессией Python-разработчика и базовыми инструментами.</li>
-                        <li>Реализовала учебный проект: Telegram-бот «Quote of the Day» (Python).</li>
-                        <li>Начала разработку проекта интернет-магазина на Django.</li>
+                        <li>{% trans "Learned the profession of Python developer and basic tools." %}</li>
+                        <li>{% trans "Implemented a learning project: Telegram bot «Quote of the Day» (Python)." %}</li>
+                        <li>{% trans "Started development of an online store project on Django." %}</li>
                     </ul>
                 </div>
                 <!-- Второй курс -->
                 <div class="popup-item">
-                    <p class="course-title">Лето 2022 года - "Летняя школа Python-Junior"</p>
-                    <p><span class="course-label">Длительность обучения:</span> 2 месяца</p>
-                    <p><span class="course-label">Итоги курса:</span></p>
+                    <p class="course-title">{% trans 'Summer 2022 - "Python-Junior Summer School"' %}</p>
+                    <p><span class="course-label">{% trans "Course Duration:" %}</span> {% trans "2 months" %}</p>
+                    <p><span class="course-label">{% trans "Course Outcomes:" %}</span></p>
                     <ul class="course-results">
-                        <li>Изучила основы Django</li>
-                        <li>Учавствовала в реализации и презентации командного проекта "Сайт для агрономов города"</li>
+                        <li>{% trans "Learned the basics of Django." %}</li>
+                        <li>{% trans 'Participated in the implementation and presentation of a team project "Website for City Agronomists".' %}</li>
                     </ul>
                 </div>
                 <!-- Первый курс -->
                 <div class="popup-item">
-                    <p class="course-title">Весна 2022 года - "Python для начинающих"</p>
-                    <p><span class="course-label">Длительность обучения:</span> 3 месяца</p>
-                    <p><span class="course-label">Итоги курса:</span></p>
+                    <p class="course-title">{% trans 'Spring 2022 - "Python for Beginners"' %}</p>
+                    <p><span class="course-label">{% trans "Course Duration:" %}</span> {% trans "3 months" %}</p>
+                    <p><span class="course-label">{% trans "Course Outcomes:" %}</span></p>
                     <ul class="course-results">
-                        <li>Изучила основы Python</li>
-                        <li>Реализовала и презентовала учебный проект «Контроль бюджета» на Python с использованием работы с файлами в VS Code</li>
+                        <li>{% trans "Learned the basics of Python." %}</li>
+                        <li>{% trans "Implemented and presented a learning project «Budget Control» in Python using file operations in VS Code." %}</li>
                     </ul>
                 </div>
-                <button class="close-popup">Закрыть</button>
+                <button class="close-popup">{% trans "Close" %}</button>
             </div>
         </div>
 
         <!-- Попап: Конкурсы -->
         <div class="popup-container" id="contests">
             <div class="popup">
-                <h2>Участие в конкурсах:</h2>
-                <!-- Третья оллимпиада -->
+                <h2>{% trans "Participation in Contests:" %}</h2>
+                <!-- Третья олимпиада -->
                 <div class="popup-item">
-                    <p class="course-title">Районные олимпиады по информатике:</p>
-                    <p><span class="course-label">2024 год:</span> I место (12 класс)</p>
-                    <p><span class="course-label">2023 год:</span> I место (11 класс)</p>
-                    <p><span class="course-label">2022 год:</span> I место (10 класс)</p>
+                    <p class="course-title">{% trans "District Informatics Olympiads:" %}</p>
+                    <p><span class="course-label">{% trans "2024:" %}</span> {% trans "1st place (12th grade)" %}</p>
+                    <p><span class="course-label">{% trans "2023:" %}</span> {% trans "1st place (11th grade)" %}</p>
+                    <p><span class="course-label">{% trans "2022:" %}</span> {% trans "1st place (10th grade)" %}</p>
                 </div>
-                <button class="close-popup">Закрыть</button>
+                <button class="close-popup">{% trans "Close" %}</button>
             </div>
         </div>
 
         <section>
             <div class="fixed-container">
-                <h2>Примеры работ</h2>
+                <h2>{% trans "Project Examples" %}</h2>
                 <div class="works">
                     <div class="work-item">
                         <a href="#">
                             <img src="{% static 'portfolio/img/portfolio.jpg' %}" alt="portfolio">
-                            <p>Данный сайт создан мной самостоятельно</p>
+                            <p>{% trans "This website was created by me independently." %}</p>
                         </a>
                     </div>
                     <div class="work-item bot-project">
                         <a href="https://github.com/Olesea05/QuoteBotTelegram" target="_blank">
                             <img src="{% static 'portfolio/img/bot.jpg' %}" alt="Telegram Bot">
-                            <p>Телеграм-бот "Quote of the day", высылающий цитаты</p>
+                            <p>{% trans 'Telegram bot "Quote of the Day", sending daily quotes' %}</p>
                         </a>
                     </div>
                     <div class="work-item bot-project">
                         <a href="https://github.com/Olesea05/OnlineStoreLaserSmart" target="_blank">
                             <img src="{% static 'portfolio/img/shop.jpg' %}" alt="Telegram Bot">
-                            <p>Интернет магазин, находящийся в разработке</p>
+                            <p>{% trans "Online store, currently under development" %}</p>
                         </a>
                     </div>
                 </div>
