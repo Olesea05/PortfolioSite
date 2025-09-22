@@ -33,16 +33,16 @@ http://127.0.0.1:8000/
 ## Screenshots
 Here are some screenshots of the website:
 ### Site Overview 1
-![Site Overview 1](portfolio/static/img/site_overview_1.png)
+![Site Overview 1](portfolio/static/portfolio/img/site_overview_1.png)
 
 ### Site Overview 2
-![Site Overview 2](portfolio/static/img/site_overview_2.png)
+![Site Overview 2](portfolio/static/portfolio/img/site_overview_2.png)
 
 ### Pop-up 1
-![Pop-up 1](portfolio/static/img/popup_1.png)
+![Pop-up 1](portfolio/static/portfolio/img/popup_1.png)
 
 ### Pop-up 2
-![Pop-up 2](portfolio/static/img/popup_2.png)
+![Pop-up 2](portfolio/static/portfolio/img/popup_2.png)
 
 ## Author
 Olesea Ghincu  
